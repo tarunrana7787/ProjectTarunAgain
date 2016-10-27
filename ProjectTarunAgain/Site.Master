@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ProjectTarunAgain.Site" %>
+
+<!DOCTYPE html>
+<!-- Author: Tarun Rana, ProjectTarunAgain Kaur
+    Date: 7th October 2017
+    -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ProjectTarunAgain</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <asp:PlaceHolder ID="PublicNavigation" runat="server">
+                        <li id="home_public" runat="server"><a href="default.aspx"> Home</a></li>
+                        <li id="login_public" runat="server"><a href="login.aspx"> Log In</a></li>
+                        <li id="register_public" runat="server"><a href="Register.aspx"> Register</a></li>
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="UserNavigation" runat="server">
+                        <li id="default_user" runat="server"><a href="default.aspx"> Home</a></li>
+                        <li id="logout_user" runat="server"><a href="Logout.aspx"> Logout</a></li>
+                    </asp:PlaceHolder>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- /.container-fluid -->
+        </nav>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- Footer Bar -->
+        <footer role="contentinfo">
+            <nav class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container">
+                    <h4>&nbsp;Copyright &copy; Tarun Rana- Student#: 300871205, Harkamal Kaur- Student#: 300871422 - Software Engineering Technician</h4>
+                </div>
+            </nav>
+        </footer>
+
+    </form>
+
+
+
+    <!--Java Script Section-->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>

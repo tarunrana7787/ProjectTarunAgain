@@ -1,0 +1,54 @@
+﻿/**
+    Styles for Default.aspx goes here
+*/
+body {
+    background-color: lightgreen;
+}
+
+.banner {
+    background-image: url(../Assets/banner.png);
+    height: 150px;
+    width: 350px;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    margin-left:250px;
+}
+
+.logo {
+ display:inline-block;
+ height:100px;
+ width:250px;
+ background-image:url(../Assets/logo.png);
+ -webkit-margin-top-collapse:separate;
+ vertical-align:top;
+}
+/**
+    Styles for Team.aspx goes here
+*/
+.field {
+    margin-left: 30px;
+}
+
+/**
+    Styles for LogIn.aspx goes here
+*/
+.sign {
+    position: relative;
+    display: table;
+    left:38%;
+    align-content:center;
+    margin-bottom:15px;
+}
+.loginText{
+    font-family:Verdana;
+    font-size:30px;
+    left:37.2%;
+    position:relative;
+    margin-bottom:15px;
+}
+.loginButton{
+    left:37.2%;
+    position:relative;
+    margin-bottom:15px;
+}
